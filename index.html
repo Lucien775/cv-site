@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucien Coudert</title>
+<meta name="description" content="CV virtuel">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ===================== RAIL D'INDEX (navigation / signature visuelle) ===================== -->
+<nav class="rail" aria-label="Navigation des sections">
+  <div class="rail-top">
+    <span class="rail-mark">CV</span>
+  </div>
+  <ol class="rail-tabs" id="railTabs">
+    <!-- généré par app.js à partir de data.js -->
+  </ol>
+  <button class="lang-stamp" id="langToggle" aria-label="Changer de langue" title="FR / EN">
+    <span data-active="fr">FR</span><span class="sep">·</span><span data-active="en">EN</span>
+  </button>
+</nav>
+
+<!-- ===================== CONTENU PRINCIPAL ===================== -->
+<main id="main">
+
+  <!-- ---------- HERO ---------- -->
+  <section class="section hero" id="profil" data-index="00">
+    <p class="eyebrow mono">Dossier — <span id="lastUpdate"></span></p>
+    <h1 class="display" id="fullName">Prénom Nom</h1>
+    <p class="role" id="role">Intitulé du poste / champ académique</p>
+    <p class="bio" id="bio">
+      Cours paragraphe de présentation : qui vous êtes, votre parcours en une phrase,
+      ce que vous cherchez. À réécrire dans <code>data.js</code>.
+    </p>
+    <ul class="meta mono" id="metaList">
+      <!-- localisation, disponibilité, liens : généré depuis data.js -->
+    </ul>
+  </section>
+
+  <!-- ---------- EXPÉRIENCES ---------- -->
+  <section class="section" id="experiences" data-index="01">
+    <header class="section-head">
+      <p class="eyebrow mono">01</p>
+      <h2 class="display" data-i18n="experiences.title">Expériences professionnelles</h2>
+    </header>
+    <div class="timeline" id="experiencesList"><!-- généré --></div>
+  </section>
+
+  <!-- ---------- FORMATION ---------- -->
+  <section class="section" id="formation" data-index="02">
+    <header class="section-head">
+      <p class="eyebrow mono">02</p>
+      <h2 class="display" data-i18n="formation.title">Formation académique</h2>
+    </header>
+    <div class="timeline" id="formationList"><!-- généré --></div>
+  </section>
+
+  <!-- ---------- COMPÉTENCES ---------- -->
+  <section class="section" id="competences" data-index="03">
+    <header class="section-head">
+      <p class="eyebrow mono">03</p>
+      <h2 class="display" data-i18n="competences.title">Compétences</h2>
+    </header>
+    <div class="ledger" id="skillsLedger"><!-- généré --></div>
+  </section>
+
+  <!-- ---------- PROJETS ---------- -->
+  <section class="section" id="projets" data-index="04">
+    <header class="section-head">
+      <p class="eyebrow mono">04</p>
+      <h2 class="display" data-i18n="projets.title">Projets</h2>
+    </header>
+    <div class="projects-grid" id="projectsList"><!-- généré --></div>
+  </section>
+
+  <!-- ---------- CONTACT ---------- -->
+  <section class="section contact" id="contact" data-index="05">
+    <header class="section-head">
+      <p class="eyebrow mono">05</p>
+      <h2 class="display" data-i18n="contact.title">Contact</h2>
+    </header>
+    <div class="contact-block">
+      <p class="contact-lead" data-i18n="contact.lead">Discutons d'une opportunité, d'une collaboration ou simplement de votre projet.</p>
+      <ul class="contact-links mono" id="contactLinks"><!-- généré --></ul>
+      <a href="cv.pdf" class="cv-download mono" download>
+        <span data-i18n="contact.download">↓ Télécharger le CV (PDF)</span>
+      </a>
+    </div>
+    <footer class="footer mono">
+      <span data-i18n="footer.note">Site personnel — code source disponible sur demande.</span>
+    </footer>
+  </section>
+
+</main>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
