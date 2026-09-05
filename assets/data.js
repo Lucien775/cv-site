@@ -102,14 +102,15 @@ const CV_DATA = {
         { label: { fr: "Python", en: "Python" }, value: 85 },
         { label: { fr: "Machine Learning / Deep Learning", en: "Machine Learning / Deep Learning" }, value: 68 },
         { label: { fr: "Analyse de données & statistiques", en: "Data analysis & statistics" }, value: 70 },
-        { label: { fr: "Interprétabilité des modèles", en: "Model interpretability" }, value: 55 }
+        { label: { fr: "Interprétabilité des modèles", en: "Model interpretability" }, value: 55 },
+        { label: { fr: "Web scraping", en: "Web scraping" }, value: 65 }
       ]
     },
     {
       category: { fr: "Cybersécurité", en: "Cybersecurity" },
       items: [
         { label: { fr: "Sécurité informatique — fondamentaux", en: "Information security fundamentals" }, value: 55 },
-        { label: { fr: "Sécurité du Machine Learning", en: "Machine Learning security" }, value: 40 },
+        { label: { fr: "Sécurité et Machine Learning", en: "Machine Learning security" }, value: 40 },
         { label: { fr: "Analyse de malware & forensic numérique", en: "Malware analysis & digital forensics" }, value: 40 },
         { label: { fr: "Cryptographie & sécurité du code", en: "Cryptography & secure coding" }, value: 45 }
       ]
@@ -120,7 +121,9 @@ const CV_DATA = {
         { label: {fr: "C", en : "C"}, value: 80},
         { label: { fr: "C++ / Programmation orientée objet", en: "C++ / Object-oriented programming" }, value: 60 },
         { label: { fr: "Architecture des ordinateurs & systèmes", en: "Computer architecture & systems" }, value: 55 },
-        { label: { fr: "Bases de données / SQL", en: "Databases / SQL" }, value: 55 },
+        { label: { fr: "Bases de données / SQL", en: "Databases / SQL" }, value: 60 },
+        { label: { fr: "PostgreSQL & SQLAlchemy", en: "PostgreSQL & SQLAlchemy" }, value: 60 },
+        { label: { fr: "Docker", en: "Docker" }, value: 55 },
         { label: { fr: "Calcul haute performance & algorithmique avancée", en: "High-performance computing & advanced algorithms" }, value: 55 }
       ]
     },
@@ -173,20 +176,20 @@ const CV_DATA = {
       link: { href: "https://github.com/Lucien775/test_gpt_mp", label: { fr: "Dépôt GitHub", en: "Repository GitHub" } }
     },
     {
+      title: { fr: "Water Polo Reference — base de données statistiques du water polo international", en: "Water Polo Reference — International Water Polo Stats Database" },
+      description: {
+        fr: "Conception d'une base de données statistiques pour le water polo international, sur le modèle de Basketball-Reference — un sport qui ne disposait jusqu'ici d'aucune plateforme centralisée de ce type. Mise en place d'un pipeline complet, de la rétro-ingénierie d'une API non documentée (scraping) jusqu'à une base relationnelle PostgreSQL, avec schéma versionné (DBML), chargement idempotent et environnement conteneurisé (Docker). Pipeline fonctionnel sur la Coupe du Monde U16 Femmes 2026 ; la couche de visualisation reste à développer.",
+        en: "Built a statistical database for international water polo, modeled after Basketball-Reference — a sport that had no centralized platform of this kind until now. Designed a complete pipeline, from reverse-engineering an undocumented API (scraping) to a relational PostgreSQL database, with a versioned schema (DBML), idempotent data loading, and a containerized environment (Docker). The pipeline is functional for the 2026 U16 Women's World Championship; the visualization layer is still to be built."
+      },
+      link: { href: "https://github.com/Lucien775/waterpolo-reference", label: { fr: "Dépôt GitHub", en: "Repository GitHub" } }
+    },
+    {
       title: { fr: "GPT from scratch en C++ (En Cours)", en: "GPT from Scratch in C++ (In Progress)" },
       description: {
         fr: "Projet personnel visant à recréer un petit modèle de langage de type GPT-2 entièrement from scratch en C++, sans framework de deep learning. Implémentation manuelle des briques fondamentales du modèle (mécanisme d'attention, couches du transformer, rétropropagation), dans un objectif de compréhension approfondie du fonctionnement interne des architectures de type GPT.",
         en: "Personal project recreating a small GPT-2-style language model entirely from scratch in C++, without any deep learning framework. Manually implemented the model's core building blocks (attention mechanism, transformer layers, backpropagation) to gain a deep understanding of how GPT-style architectures work under the hood."
       },
       link: { href: "https://github.com/Lucien775/gpt_from_scratch_cpp", label: { fr: "Dépôt GitHub", en: "Repository GitHub" } }
-    },
-    {
-      title: { fr: "Jeu de Tarot Africain en réseau", en: "Networked African Tarot Card Game" },
-      description: {
-        fr: "Implémentation en C d'un jeu de Tarot Africain en architecture client-serveur, avec prise en charge de deux protocoles réseau (TCP et UDP). Projet compilé via Makefile, avec une documentation dédiée facilitant le débogage et l'évolution du code.",
-        en: "Built an African Tarot card game in C using a client-server architecture, supporting two network protocols (TCP and UDP). Compiled via Makefile, with dedicated documentation to ease debugging and future development."
-      },
-      link: { href: "https://github.com/Lucien775/Tarot-Africain", label: { fr: "Dépôt GitHub", en: "Repository GitHub" } }
     },
   ],
     
